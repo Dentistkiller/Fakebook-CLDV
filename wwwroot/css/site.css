@@ -1,0 +1,167 @@
+/* Color Palette:
+#181A2F - Dark Background
+#37415C - Secondary Background
+#B4182D - Accent Background
+#FDA481 - Highlight/Accent
+#242E49 - Primary Action
+#54162B - Secondary Action */
+
+/* Global Styles */
+/* General Styles */
+body {
+    background-color: #181A2F; /* Dark blue background */
+    color: #FDA481; /* Light orange text */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #242E49; /* Darker blue header */
+    padding: 20px;
+    text-align: center;
+}
+
+    header h1 {
+        color: #B4182D; /* Red for the main header */
+        margin: 0;
+    }
+
+/* Navigation Styles */
+nav {
+    background-color: #37415C; /* Medium blue for navigation */
+    padding: 10px;
+}
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+        nav ul li {
+            float: left;
+        }
+
+            nav ul li a {
+                display: block;
+                color: #FDA481; /* Light orange text */
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                nav ul li a:hover {
+                    background-color: #54162B; /* Dark red for hover */
+                }
+
+/* Button Styles */
+button {
+    background-color: #B4182D; /* Red buttons */
+    color: #FDA481; /* Light orange text */
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #54162B; /* Dark red for hover */
+    }
+
+/* Form Styles */
+form {
+    background-color: #242E49; /* Darker blue for forms */
+    padding: 20px;
+    margin: 20px auto;
+    width: 300px;
+}
+
+    form label {
+        color: #FDA481; /* Light orange text */
+    }
+
+    form input[type="text"],
+    form input[type="password"],
+    form input[type="email"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #37415C; /* Medium blue border */
+        background-color: #181A2F; /* Dark blue background */
+        color: #FDA481; /* Light orange text */
+    }
+
+    form input[type="submit"] {
+        background-color: #B4182D; /* Red submit button */
+        color: #FDA481; /* Light orange text */
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+        form input[type="submit"]:hover {
+            background-color: #54162B; /* Dark red for hover */
+        }
+
+/* Footer Styles */
+footer {
+    background-color: #242E49; /* Darker blue footer */
+    color: #FDA481; /* Light orange text */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #181A2F; /* Dark Background */
+    color: #FDA481; /* Highlight/Accent for text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 16px;
+    text-align: left;
+    color: #FDA481; /* Highlight/Accent for better contrast */
+}
+
+th {
+    background-color: #37415C; /* Secondary Background */
+    color: #FDA481; /* Highlight/Accent for headers */
+    font-weight: bold;
+}
+
+td {
+    border-bottom: 1px solid #242E49; /* Primary Action */
+}
+
+tr:nth-child(even) {
+    background-color: #242E49; /* Primary Action */
+}
+
+tr:hover {
+    background-color: #B4182D; /* Accent Background */
+    color: #181A2F; /* Dark Background for contrast */
+}
+
+button {
+    background-color: #54162B; /* Secondary Action */
+    color: #FDA481; /* Highlight/Accent */
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    button:hover {
+        background-color: #B4182D; /* Accent Background */
+        color: #181A2F; /* Dark Background for contrast */
+    }
