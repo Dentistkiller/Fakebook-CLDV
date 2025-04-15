@@ -47,14 +47,12 @@
                 ExpiresOn = DateTimeOffset.UtcNow.AddHours(1)  // Token expiration time (adjust as needed)
             };
 
-            // Set the permissions for the SAS token (read permission)
             sasBuilder.SetPermissions(BlobSasPermissions.Read);
 
-            // Generate the SAS token using the blob's URI
-            var sasToken = blobClient.GenerateSasUri(sasBuilder).Query;
+            // Generate the SAS URI
+            Uri sasUri = blobClient.GenerateSasUri(sasBuilder);
 
-
-            return sasToken;
+            return sasUri.ToString(); // <-- Return full URL, not just the query
         }
     }
 }

@@ -26,8 +26,8 @@ namespace YourProjectName.Controllers
                     {
                         User = u,
                         Score =
-                            (u.Username.Contains(searchQuery) ? 2 : 0) +
-                            (u.Email.Contains(searchQuery) ? 1 : 0) +
+                            (u.Username.Contains(searchQuery) ? 3 : 0) +
+                            (u.Email.Contains(searchQuery) ? 2 : 0) +
                             (u.Bio.Contains(searchQuery) ? 1 : 0)
                     });
 
